@@ -39,7 +39,7 @@ const NavigatorLocationMap = () => {
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: configKeys.GOOGLE_MAPS_API_KEY }}
-          defaultCenter={{ lat: location.latitude, lng: location.longitude }}
+          center={{ lat: location.latitude, lng: location.longitude }}
           defaultZoom={15}
         >
           <AnyReactComponent
